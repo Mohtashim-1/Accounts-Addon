@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:commission_agent_name",
+ "creation": "2024-07-19 18:11:11.582114",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info",
+  "commission_agent_name",
+  "disable",
+  "column_break_mnjgi",
+  "commission_agent_group",
+  "currency_and_price_list_section",
+  "default_currency",
+  "column_break_buzmn",
+  "default_price_list",
+  "disabled",
+  "status",
+  "credit_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_info",
+   "fieldtype": "Section Break",
+   "label": "Name and Type",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "commission_agent_name",
+   "fieldtype": "Data",
+   "label": "Commission Agent Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "column_break_mnjgi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_agent_group",
+   "fieldtype": "Link",
+   "label": "Commission Agent Group",
+   "options": "Commission Agent Group"
+  },
+  {
+   "fieldname": "currency_and_price_list_section",
+   "fieldtype": "Section Break",
+   "label": "Currency and Price List"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Billing Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_buzmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Enable\nDisabled"
+  },
+  {
+   "fieldname": "credit_to",
+   "fieldtype": "Link",
+   "label": "Credit To",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-19 18:12:35.426094",
+ "modified_by": "Administrator",
+ "module": "Accounts Addon",
+ "name": "Commission Agent",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

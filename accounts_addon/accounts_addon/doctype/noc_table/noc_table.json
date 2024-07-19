@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-19 17:52:42.372320",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "noc_account",
+  "bank",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "noc_account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-19 17:52:42.372320",
+ "modified_by": "Administrator",
+ "module": "Accounts Addon",
+ "name": "NOC Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

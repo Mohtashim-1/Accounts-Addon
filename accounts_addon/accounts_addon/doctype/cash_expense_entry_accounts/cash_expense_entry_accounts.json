@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-26 11:42:05.744096",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "column_break_jaoj",
+  "cost_center",
+  "column_break_bwxv",
+  "remakrs",
+  "column_break_vbix",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Account",
+   "link_filters": "[[\"Account\",\"parent_account\",\"=\",\"Indirect Expenses - T\"]]",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bwxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remakrs",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Remakrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vbix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jaoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-26 12:35:20.160654",
+ "modified_by": "Administrator",
+ "module": "Accounts Addon",
+ "name": "Cash Expense Entry Accounts",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

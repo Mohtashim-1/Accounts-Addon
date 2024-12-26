@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-26 11:40:02.926441",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_pkiv",
+  "petty_cash_account",
+  "column_break_kkef",
+  "posting_date",
+  "column_break_zoli",
+  "company",
+  "cash_expense_entry_accounts_section",
+  "cash_expense_entry_accounts",
+  "section_break_mima",
+  "total_debit_amount",
+  "column_break_gyrm",
+  "account_balance",
+  "column_break_fmhc",
+  "total_balance",
+  "section_break_hstz",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hstz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CEV.-.MM.-.YY.-"
+  },
+  {
+   "fieldname": "column_break_pkiv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "petty_cash_account",
+   "fieldtype": "Link",
+   "label": "Petty Cash Account",
+   "link_filters": "[[\"Account\",\"parent_account\",\"=\",\"Petty Cash - T\"]]",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_kkef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_zoli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cash_expense_entry_accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Cash Expense Entry Accounts"
+  },
+  {
+   "fieldname": "cash_expense_entry_accounts",
+   "fieldtype": "Table",
+   "label": "Cash Expense Entry Accounts",
+   "options": "Cash Expense Entry Accounts"
+  },
+  {
+   "fieldname": "section_break_mima",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total_debit_amount",
+   "fieldtype": "Float",
+   "label": "Total Debit Amount"
+  },
+  {
+   "fieldname": "column_break_gyrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_balance",
+   "fieldtype": "Currency",
+   "label": "Account Balance"
+  },
+  {
+   "fieldname": "column_break_fmhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_balance",
+   "fieldtype": "Currency",
+   "label": "Total Balance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-26 12:41:37.946995",
+ "modified_by": "Administrator",
+ "module": "Accounts Addon",
+ "name": "Expense Entry",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
